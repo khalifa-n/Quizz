@@ -1,0 +1,142 @@
+
+  .login-form-text{
+      color:white;
+      margin-top: 30px;
+      font-family: Montserrat;
+    
+    
+  }
+  
+  .login-form{
+    background-color: #C90017;
+    height: 100px;
+
+  } 
+  .btn-connexion{
+      color:white;
+      background-color:#C90017 ;
+      border-radius: 15px;
+    }
+    .bg { 
+  background-image:url(images.JPEG) ;
+  
+} 
+
+  
+ 
+.navbar{
+  background-color:white !important; 
+
+  
+}
+body{
+           
+            background-image: url('../img/try.png');
+            width: 100%!important;
+            height: 100%!important;
+           
+            
+
+        }
+
+.container-fluid{
+    padding:0;
+}
+ .img-logo{
+    width:50px;
+} 
+/* inscription */
+  .login-form-text{
+      color:white;
+      margin-top: 30px;
+      font-family: Montserrat; 
+  }
+  h3{
+    color:#C90017; 
+  }
+  .login-form{
+    background-color: #C90017;
+    height: 100px;
+
+  } 
+  .btn-connexion{
+      color:white;
+      background-color:#C90017 ;
+      border-radius: 15px;
+    }
+    .bg { 
+ 
+ background: url(img/images.jpeg) 
+} 
+.text{
+  text-align: center;   
+  color:#C90017;
+  font-family: Montserrat;
+  margin-right: 550px;
+ 
+ margin-top:15px ;
+}
+.navbar{
+  background-color:#C90017 ; 
+  height: 100px;
+  
+}
+ 
+  
+.login-form-text{
+      color:white;
+      margin-top: 30px;
+      font-family: Montserrat;
+   
+     
+     
+    
+  }
+  .login-form{
+    background-color: #C90017;
+    height: 100px;
+
+  } 
+  .btn-connexion{
+      color:white;
+      background-color:#C90017 ;
+      border-radius: 15px;
+    }
+    .bg { 
+  background-image:url(images.JPEG) ;
+} 
+.text{
+  color:#C90017;
+  font-family: Montserrat;
+ 
+}
+.navbar{
+  background-color:#C90017 ; 
+  height: 100px;
+  
+}
+
+  .img-avatar{
+    width: 50px;
+  }
+  /* .mt-0 {
+    margin-top: 25px!important;
+  } */
+   h6{
+    color: white;  
+    margin-top:-30px; 
+
+}  
+.fa{
+  margin: auto;
+}
+/* deconnexion */
+ .deconnexion{
+  float: right;
+  margin-top: 30px;
+} 
+.long-cadre{
+  width: 1000px; 
+
+
+}  
