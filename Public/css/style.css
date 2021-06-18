@@ -1,44 +1,31 @@
-
+body{
+background-image: url('../img/try.png');
+background-repeat: no-repeat ;
+background-position:top;
+background-attachment: fixed;
+background-size: cover; 
+background-size: cover; 
+-webkit-background-size: cover; 
+-moz-background-size: cover;
+-o-background-size: cover; 
+ }
   .login-form-text{
       color:white;
       margin-top: 30px;
       font-family: Montserrat;
-    
-    
   }
-  
   .login-form{
     background-color: #C90017;
     height: 100px;
-
   } 
   .btn-connexion{
       color:white;
       background-color:#C90017 ;
       border-radius: 15px;
     }
-    .bg { 
-  background-image:url(images.JPEG) ;
-  
-} 
-
-  
- 
-.navbar{
-  background-color:white !important; 
-
-  
+ .navbar{
+  background-color:white !important;  
 }
-body{
-           
-            background-image: url('../img/try.png');
-            width: 100%!important;
-            height: 100%!important;
-           
-            
-
-        }
-
 .container-fluid{
     padding:0;
 }
@@ -46,7 +33,7 @@ body{
     width:50px;
 } 
 /* inscription */
-  .login-form-text{
+  /* .login-form-text{
       color:white;
       margin-top: 30px;
       font-family: Montserrat; 
@@ -121,7 +108,7 @@ body{
   }
   /* .mt-0 {
     margin-top: 25px!important;
-  } */
+  } 
    h6{
     color: white;  
     margin-top:-30px; 
@@ -129,14 +116,4 @@ body{
 }  
 .fa{
   margin: auto;
-}
-/* deconnexion */
- .deconnexion{
-  float: right;
-  margin-top: 30px;
-} 
-.long-cadre{
-  width: 1000px; 
-
-
-}  
+} */

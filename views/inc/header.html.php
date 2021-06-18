@@ -15,8 +15,8 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-<div class="container-fluid bg-cover"> 
-<nav class="navbar navbar-light  ">
+<div class="container-fluid  bg-cover"> 
+<nav class="navbar">
 <!-- le logo -->
   <img  class="img-logo" src="<?= WEB_ROUTE."img/coudy.JPG" ?>" alt="logo"> 
    <div class=" container  justify-content-center "><h3>Le plaisir de jouer</h3></div> 

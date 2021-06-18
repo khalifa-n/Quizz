@@ -1,6 +1,3 @@
-<?php
-    require_once(ROUTE_DIR.'views/inc/header.html.php');
-    ?>
    <?php
     require_once(ROUTE_DIR.'views/inc/header.html.php');
     ?>
@@ -15,7 +12,7 @@
    	</div>
    </div>
 </div>
- 
+
     <?php
     require_once(ROUTE_DIR.'views/inc/footer.html.php');
     ?>

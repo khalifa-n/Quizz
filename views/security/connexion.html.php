@@ -7,19 +7,11 @@ if (isset($_SESSION['arrayError'])) {
 require_once(ROUTE_DIR.'views/inc/header.html.php');
 ?>
   
-<div class="container-fluid bg-cover"> 
-<!-- <nav class="navbar navbar-light  ">
-
-  <img  class="img-logo" src="<?= WEB_ROUTE."img/coudy.JPG" ?>" alt="logo"> 
-   <div class=" container  justify-content-center "><h3>Le plaisir de jouer</h3></div> 
-</nav> -->
         <div class="container col-sm-6 mt-5">
-       
         <div class="card  ">
             <div class=" login-form ">
         <h3 class="text-left  login-form-text">login form</h3>
         </div>
-                <div id="login-row" class="row justify-content-center align-items-center container">
                 <div id="login-column" class="col-md-6 container">
                     <div id="login-box" class="col-md-12 container">
                         <?php if (isset($arrayError['erreurConnexion'])):?>
@@ -62,14 +54,7 @@ require_once(ROUTE_DIR.'views/inc/header.html.php');
                         </form>
                     </div>
                 </div>
-                </div>
-               
-           
         </div>
         </div>
-</div>
 
 <?php require_once(ROUTE_DIR.'views/inc/footer.html.php')?>
- <style>
- 
- </style>

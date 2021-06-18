@@ -1,4 +1,4 @@
-<?php 
+ <?php 
 if (isset($_SESSION['arrayError'])) {
   $arrayError=$_SESSION['arrayError'];
   unset($_SESSION['arrayError']);
@@ -11,10 +11,9 @@ require_once(ROUTE_DIR.'views/inc/header.html.php')
 <?php if (isset($arrayError['erreurconnexion'])) :?>
  <div class="alert alert-primary" role="alert" > 
     <strong><?php echo isset($arrayError['erreurConnexion']) ? $arrayError['erreurConnexion'] : " "?></strong>
-<?php  endif ?> 
+ <?php  endif ?>  
 </div>  
-
-  <body>
+ 
         <div class="container col-sm-6 mt-5">
        
         <div class="card ">
@@ -99,8 +98,9 @@ require_once(ROUTE_DIR.'views/inc/header.html.php')
                      </div>
                     </div>
                    </div>
-                 </div> 
-  </body>
+                 </div>
+               
+  
   <?php require_once(ROUTE_DIR.'views/inc/footer.html.php')?>
   
- 
+  

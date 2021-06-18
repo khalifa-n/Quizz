@@ -25,8 +25,7 @@ if ($_SERVER['REQUEST_METHOD']=='GET') {
     }
 }
 
-function connexion(string $login,string $password):void{
-   
+function connexion(string $login,string $password):void{ 
     $arrayError=array();
      validation_login($login,'login',$arrayError);
      validation_password($password,'password',$arrayError);
@@ -37,7 +36,7 @@ function connexion(string $login,string $password):void{
         if (count($user)==0) {
           $arrayError['erreurConnexion']="login ou password incorrect ";
           $_SESSION['arrayError']= $arrayError;
-          header('location:'.WEB_ROUTE.'?controlleurs=security&views=connexion');
+           header('location:'.WEB_ROUTE.'?controlleurs=security&views=connexion');
         }else{
             if ($user['role']=='ROLE_ADMIN') {
                 header('location:'.WEB_ROUTE.'?controlleurs=admin&views=liste.question');
