@@ -1,1 +1,83 @@
-[{"nom":"admin","prenom":"prenom","sexe":"m","login":"admin@gmail.com","password":"admin@1","role":"ROLE_ADMIN"},{"nom":"joueur","prenom":"prenom","sexe":"m","login":"joueur@mail.com","password":"joueur@1","role":"ROLE_JOUEUR"},{"controlleurs":"security","action":"inscription","nom":"Ndiaye","prenom":"khalifa ababacar ","flexRadioDefault":"on","datenaiss":"01\/12\/2003","login":"mouhamed.ndoye@mail.com","password":"med@12345","confirmpassword":"med@12345"},{"controlleurs":"security","action":"inscription","nom":"Ndiaye","prenom":"Aboubakry","flexRadioDefault":"on","datenaiss":"01\/12\/2003","login":"hsssssssjj@gmail.com","password":"passertu","confirmpassword":"passertu"},{"controlleurs":"security","action":"inscription","nom":"Ndiaye","prenom":"khalifa ababacar ","flexRadioDefault":"on","datenaiss":"01\/12\/2003","login":"mouhamed.ndoye@mail.com","password":"med@12345","confirmpassword":"med@12345"},{"controlleurs":"security","action":"inscription","nom":"Ndiaye","prenom":"khalifa ababacar ","flexRadioDefault":"on","datenaiss":"01\/12\/2003","login":"mouhamed.ndoye@mail.com","password":"med@12345","confirmpassword":"med@12345"},{"controlleurs":"security","action":"inscription","nom":"Ndiaye","prenom":"khalifa ababacar ","flexRadioDefault":"on","datenaiss":"01\/12\/2003","login":"admin@gmail.com","password":"admin@1","confirmpassword":"admin@1"}]
+[
+	{
+		"nom": "admin",
+		"prenom": "prenom",
+		"sexe": "m",
+		"login": "admin@gmail.com",
+		"password": "admin@1",
+		"role": "ROLE_ADMIN"
+	},
+	{
+		"nom": "joueur",
+		"prenom": "prenom",
+		"sexe": "m",
+		"login": "joueur@mail.com",
+		"password": "joueur@1",
+		"role": "ROLE_JOUEUR"
+	},
+	{
+		"controlleurs": "security",
+		"action": "inscription",
+		"nom": "Ndiaye",
+		"prenom": "Babacar ",
+		"login": "mouhamed.ndoye@mail.com",
+		"password": "med@12345",
+		"confirmpassword": "med@12345",
+		"role": "ROLE_JOUEUR"
+	},
+	{
+		"controlleurs": "security",
+		"action": "inscription",
+		"nom": "Diallo",
+		"prenom": "Aboubakry",
+		"datenaiss": "01\/12\/2003",
+		"login": "Aboubakry@gmail.com",
+		"password": "passertu",
+		"confirmpassword": "passertu",
+		"role": "ROLE_JOUEUR"
+	},
+	{
+		"controlleurs": "security",
+		"action": "inscription",
+		"nom": "Wone",
+		"prenom": "Coudy",
+		"datenaiss": "01\/12\/2003",
+		"login": "Coudy.Wone@mail.com",
+		"password": "coudy@1",
+		"confirmpassword": "coudy@1",
+		"role": "ROLE_JOUEUR"
+	},
+	{
+		"controlleurs": "security",
+		"action": "inscription",
+		"nom": "Niasse",
+		"prenom": "Imam ",
+		"datenaiss": "01\/12\/2003",
+		"login": "imam.niasse@mail.com",
+		"password": "med@12345",
+		"confirmpassword": "med@12345",
+		"role": "ROLE_JOUEUR"
+	},
+	{
+		"controlleurs": "security",
+		"action": "inscription",
+		"nom": "Cisse",
+		"prenom": "Amina",
+		"datenaiss": "01\/12\/2003",
+		"login": "admin@gmail.com",
+		"password": "admin@1",
+		"confirmpassword": "admin@1",
+		"role": "ROLE_ADMIN"
+	},
+	{
+		"controlleurs": "security",
+		"action": "inscription",
+		"nom": "Laye",
+		"prenom": "Libasse ",
+		"datenaiss": "01\/12\/2003",
+		"login": "Libasse.Laye@gmail.com",
+		"password": "Laye@1",
+		"confirmpassword": "Laye@1",
+		"role": "ROLE_JOUEUR"
+	}
+]

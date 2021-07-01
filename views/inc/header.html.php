@@ -16,8 +16,8 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 <div class="container-fluid  bg-cover"> 
-<nav class="navbar">
-<!-- le logo -->
-  <img  class="img-logo" src="<?= WEB_ROUTE."img/coudy.JPG" ?>" alt="logo"> 
+ <nav class="navbar">
+
+  <img  class="img-logo" src="<?= WEB_ROUTE."img/coudy.jpg" ?>" alt="logo"> 
    <div class=" container  justify-content-center "><h3>Le plaisir de jouer</h3></div> 
-</nav>
+</nav>  
