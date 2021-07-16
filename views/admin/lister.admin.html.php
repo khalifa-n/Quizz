@@ -4,7 +4,7 @@
 <?php
      require_once(ROUTE_DIR.'views/inc/deconect.html.php');
     ?>
-     <div class="container">
+     <div class="container ">
 		    <div class="row row-hauteur bg-white">
 			    <div class="col-md-4">
 			    <?php
@@ -17,8 +17,8 @@
     $arrayuser=json_decode($json,true);
     ?> 
     <div class="  col-md-8">
-	<div class="card conteneur-liste p-4">
-	<div class="text-center ">Liste des joueurs par score </div>  
+	<div class="card conteneur-liste p-4 ">
+	<div class="text-center ">Liste des Admin </div>  
 <div class="card conteneur-nom  align-self-center border border-danger "><i></i>
 <table class="table">
   <thead>
@@ -34,7 +34,7 @@
   <tbody>
     <tr>
     <?php foreach ($arrayuser as $user):?>
-  <?php if ($user['role']!='ROLE_JOUEUR'):?>
+  <?php if ($user['role']=='ROLE_ADMIN'):?>
 
       <th scope="row">1</th>
       <td><?=$user['prenom']?></td>

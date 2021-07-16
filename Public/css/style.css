@@ -30,10 +30,7 @@ body{
   .container-fluid{
       padding:0;
   }
-   .img-logo{
-      width:50px;
-      height:50px;
-  } 
+
   /* inscription  */
      .login-form-text{
         color:white;
@@ -134,7 +131,7 @@ body{
       height:120px ;  
     }
     .fas{
-       color: blueviolet;
+       color: black;
        float: right;
        margin-top: -25px;  
     }
@@ -146,16 +143,14 @@ body{
    .conteneur{
     
      width: 100%;
-     height: 500px; 
+      
    }
    .conteneur2{
     
     width: 80%;
     height: 450px; 
   }
-  .row-hauteur{
-    height: 800px;
-  }
+
  
   .conteneur-nom{
     
@@ -171,6 +166,7 @@ body{
 
   .question{
     margin-top:40px;
+    margin-left: 20px;
   }
   .conteneur-question{
     
@@ -185,6 +181,7 @@ body{
   } 
   .point{
     margin-top: 40px;
+    margin-left: 20px;
   } 
   .circle{
     border-radius: 40px;
@@ -201,17 +198,26 @@ body{
   margin-top: 125px;
  }
  .nbr-joueur{
-  background-color: #837a7b; 
+  background-color: #C90017; 
   display: inline-block;
   margin-left: 15px;
  }
  .nbr-question{
-  background-color: #837a7b;
+  background-color: #C90017;
   display: inline-block;
   margin-left: 30px;
  }
  .nbr-admin{
-  background-color: #837a7b; 
+  background-color: #C90017; 
   display: inline-block;
   margin-left: 33px;
  }
+ .tableau{
+  color: black;
+  margin-top: -30px;
+  margin-left: 30px;  
+    } 
+ 
+
+
+ 

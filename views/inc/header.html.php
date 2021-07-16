@@ -17,7 +17,7 @@
 <!------ Include the above in your HEAD tag ---------->
 <div class="container-fluid  bg-cover"> 
  <nav class="navbar">
-
-  <img  class="img-logo" src="<?= WEB_ROUTE."img/coudy.jpg" ?>" alt="logo"> 
+ <img src="<?= WEB_ROUTE."/img/logoquizz.png" ?>" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="logo"
+ style="width:80px">
    <div class=" container  justify-content-center "><h3>Le plaisir de jouer</h3></div> 
 </nav>  

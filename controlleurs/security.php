@@ -10,6 +10,9 @@ if ($_SERVER['REQUEST_METHOD']=='GET') {
        }elseif($_GET['views']=='deconexion'){
            deconexion();
            require(ROUTE_DIR.'views/security/connexion.html.php');
+      }elseif($_GET['views']=='deconexion'){
+           deconexion();
+           require(ROUTE_DIR.'views/security/connexion.html.php');
       }else {
         require(ROUTE_DIR.'views/security/connexion.html.php');
         }
@@ -25,8 +28,7 @@ if ($_SERVER['REQUEST_METHOD']=='GET') {
            unset ($_POST['action']);
 
          inscription($_POST); 
-         var_dump('y');
-         die();
+        
 
        }
     }
@@ -45,14 +47,16 @@ function connexion(string $login,string $password):void{
           $_SESSION['arrayError']= $arrayError;
            header('location:'.WEB_ROUTE.'?controlleurs=security&views=connexion');exit;
         }else{
+            $_SESSION['userconnect']=$user;
             if ($user['role']=='ROLE_ADMIN') {
+               
                 header('location:'.WEB_ROUTE.'?controlleurs=admin&views=liste.question');exit;
             }elseif ($user['role']== 'ROLE_JOUEUR') {
              header('location:'.WEB_ROUTE.'?controlleurs=admin&views=jeu');exit;
             }
         }
      }else {
-       
+
           $_SESSION['arrayError']=$arrayError;
          header('location:'.WEB_ROUTE.'?controlleurs=security&views=connexion');exit;
      }
@@ -70,9 +74,19 @@ function inscription(array $data):void{
             }
                
         if (form_valid($arrayError)) {
-            add_user($data);
+            if (est_admin()) {
+               $data['role']='ROLE_ADMIN';
+               add_user($data);
+               header('location:'.WEB_ROUTE.'?controlleurs=admin&views=lister.admin');
+            }else{
+                $data['role']='ROLE_JOUEUR';
+                add_user($data);
+                header('location:'.WEB_ROUTE.'?controlleurs=security&views=connexion');exit;
+
+            }
+            
  
-        header('location:'.WEB_ROUTE.'?controlleurs=security&views=connexion');exit;
+        
         }else {
             $_SESSION['arrayError']=$arrayError;
            header('location:'.WEB_ROUTE.'?controlleurs=security&views=inscription');exit;

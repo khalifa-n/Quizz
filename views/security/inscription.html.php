@@ -6,14 +6,32 @@ if (isset($_SESSION['arrayError'])) {
 
 require_once(ROUTE_DIR.'views/inc/header.html.php')
 ?>
+
+<?php 
+ if (est_admin()) {
+  require_once(ROUTE_DIR.'views/inc/deconect.html.php');
+}
+
+
+
+?>
+
 <div class="container-fluid bg-cover"> 
 
 <?php if (isset($arrayError['erreurconnexion'])) :?>
  <div class="alert alert-primary" role="alert" > 
     <strong><?php echo isset($arrayError['erreurConnexion']) ? $arrayError['erreurConnexion'] : " "?></strong>
  <?php  endif ?>  
-</div>  
+</div> 
+    
+    </div>
+    <div class="col-sm-4">
+      <?php if(est_admin()):?>
+        <?php     require_once(ROUTE_DIR.'views/inc/menu.html.php');  ?>
+
+     <?php endif?>
  
+    </div>
         <div class="container col-sm-6 mt-5">
         <div class="card ">
             <div container-fluid class="container login-form ">
@@ -91,7 +109,8 @@ require_once(ROUTE_DIR.'views/inc/header.html.php')
                    </div>
                  </div>
                
+                    
+               </div>
   
   <?php require_once(ROUTE_DIR.'views/inc/footer.html.php')?>
-  
   

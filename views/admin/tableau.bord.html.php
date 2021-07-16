@@ -35,12 +35,12 @@ require_once(ROUTE_DIR.'views/inc/deconect.html.php');
 	
 	
 	 
-	 	
+		
 	 <div class="d-flex justify-content-between ">
 
-	 <div class="nbr-joueur " ><?php echo $cptj ?> <br> nbr-joueur</div>	
-	<div class="nbr-question " ><?php echo $cpta ?><br> nbr-admin</div>
-	<div class="nbr-admin m" ><?php echo $cptq ?><br> nbr-question</div>
+	 <div class="nbr-joueur " ><?php echo $cptj ?> <br><span>nbr-joueur</span> <br><br><i class="fa tableau fa-users"></i></div>	
+	<div class="nbr-question " ><?php echo $cpta ?><br> <span>nbr-admin</span><br><br><i class="fa tableau fa-question-circle"></i></div>
+	<div class="nbr-admin m" ><?php echo $cptq ?><br><span>nbr-question</span> <br><br><i class="fa tableau fa-users"></i></div>
 	</div>
 </div>
 </div>

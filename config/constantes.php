@@ -1,6 +1,6 @@
 <?php 
-//  define("WEB_ROUTE" , "http://khalifandiaye.alwaysdata.net");
-  define('WEB_ROUTE' , "http://localhost:8000");
+ //define("WEB_ROUTE" , "http://khalifandiaye.alwaysdata.net");
+   define('WEB_ROUTE' , "http://localhost:8000");
 // WEB_ROUTE( pour les liens)
 define('ROUTE_DIR', str_replace('Public','' , $_SERVER['DOCUMENT_ROOT']) );
 ?>
