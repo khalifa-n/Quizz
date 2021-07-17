@@ -7,14 +7,7 @@
 		"password": "admin@1",
 		"role": "ROLE_ADMIN"
 	},
-	{
-		"nom": "joueur",
-		"prenom": "prenom",
-		"sexe": "m",
-		"login": "joueur@mail.com",
-		"password": "joueur@1",
-		"role": "ROLE_JOUEUR"
-	},
+	
 	{
 		"controlleurs": "security",
 		"action": "inscription",
@@ -80,33 +73,8 @@
 		"confirmpassword": "Laye@1",
 		"role": "ROLE_JOUEUR"
 	},
-	{
-		"nom": "Sarr",
-		"prenom": "khalifa ababacar ",
-		"login": "ndiaye@mail.com",
-		"password": "med@12345",
-		"confirmpassword": "med@12345",
-		"avatar": "",
-		"role": "ROLE_ADMIN"
-	},
-	{
-		"nom": "Ndiaye",
-		"prenom": "mouhamed",
-		"login": "ndoye@mail.com",
-		"password": "med@12345",
-		"confirmpassword": "med@12345",
-		"avatar": "",
-		"role": "ROLE_ADMIN"
-	},
-	{
-		"nom": "Ndiaye",
-		"prenom": "khalifa ababacar ",
-		"login": "admin@gmail.com",
-		"password": "med@12345",
-		"confirmpassword": "med@12345",
-		"avatar": "",
-		"role": "ROLE_ADMIN"
-	},
+	
+	
 	{
 		"nom": "Ndiaye",
 		"prenom": "mouhamed",
@@ -116,24 +84,8 @@
 		"avatar": "",
 		"role": "ROLE_JOUEUR"
 	},
-	{
-		"nom": "Ndiaye",
-		"prenom": "papii",
-		"login": "papi@gmail.com",
-		"password": "njckks",
-		"confirmpassword": "njckks",
-		"avatar": "",
-		"role": "ROLE_ADMIN"
-	},
-	{
-		"nom": "Ndiaye",
-		"prenom": "papi",
-		"login": "papi@gmail.com",
-		"password": "papi1@",
-		"confirmpassword": "papi1@",
-		"avatar": "",
-		"role": "ROLE_ADMIN"
-	},
+	
+	
 	{
 		"nom": "niass",
 		"prenom": "imam",
@@ -144,36 +96,8 @@
 		"role": "ROLE_ADMIN",
 		"id": "60e306cc895f8"
 	},
-	{
-		"nom": "Ndiaye",
-		"prenom": "khalifa ababacar ",
-		"login": "admin@gmail.com",
-		"password": "med@12345",
-		"confirmpassword": "med@12345",
-		"avatar": "",
-		"role": "ROLE_ADMIN",
-		"id": "60e43e7b43c9b"
-	},
-	{
-		"nom": "Ndiaye",
-		"prenom": "khalifa ababacar ",
-		"login": "mouhamed.ndoye@mail.com",
-		"password": "med@12345",
-		"confirmpassword": "med@12345",
-		"avatar": "",
-		"role": "ROLE_ADMIN",
-		"id": 871065926
-	},
-	{
-		"nom": "hjk",
-		"prenom": "khalifa ababacar ",
-		"login": "joueur@mail.com",
-		"password": "med@12345",
-		"confirmpassword": "med@12345",
-		"avatar": "",
-		"role": "ROLE_ADMIN",
-		"id": 459110611
-	},
+	
+	
 	{
 		"nom": "Ndiaye",
 		"prenom": "mouhamed",
@@ -184,16 +108,7 @@
 		"role": "ROLE_ADMIN",
 		"id": 1751743265
 	},
-	{
-		"nom": "1234",
-		"prenom": "1234",
-		"login": "1234@gmail.com",
-		"password": "med@12345",
-		"confirmpassword": "med@12345",
-		"avatar": "",
-		"role": "ROLE_ADMIN",
-		"id": 781073865
-	},
+	
 	{
 		"nom": "Ndiaye",
 		"prenom": "khalifa ababacar ",
@@ -203,15 +118,7 @@
 		"avatar": "",
 		"role": "ROLE_JOUEUR",
 		"id": 1112255031
-	},
-	{
-		"nom": "amina",
-		"prenom": "diagana",
-		"login": "diagana@gmail.com",
-		"password": "diagana",
-		"confirmpassword": "diagana",
-		"avatar": "",
-		"role": "ROLE_JOUEUR",
-		"id": 1628733836
 	}
+	
+	
 ]

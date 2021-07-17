@@ -40,28 +40,35 @@ function add_question (array $question){
      
 	file_put_contents(ROUTE_DIR.'data/question.json',$json); 
     }
-    function get_element_to_display ($array , int $page ,int $nombre_element ):array{
-        $array_element=[];
-        $indice_depart=($page*$nombre_element)-$nombre_element;
-        $indice_darrrivée=$nombre_element*$page;
-       for ($i= $indice_depart; $i < $indice_darrrivée; $i++) { 
-           if ($i> count($array) ) {
-               return $array_element;
-           }else {
-            $array_element[]=$array[$i];
-           }
-       }
-       return $array_element;
-    }
-    function nombre_page_total ($array ,$nombre_element):int{
-
-        $nombre_page_total=0;
-        if (count($array)%$nombre_element==0) {
-            $nombre_page_total=count($array)/$nombre_element ;
-
-        }else {
-            $nombre_page_total=(count($array)/$nombre_element) +1 ;
+    
+    function suppression_question(string $id):bool{
+        $json =file_get_contents(ROUTE_DIR.'data/question.json');
+        // 2 convertir le json en tableau
+        $arrayQuestion = json_decode($json,true); 
+        $tab = [];
+        $ok = false;
+          foreach( $arrayQuestion as $question){
+              if ($question['id'] == $id) {
+                $ok = true;
+              }else{
+                $tab [] = $question;
+              }
+          }
+          if($ok){
+            $json = json_encode($tab);
+            file_put_contents(ROUTE_DIR.'data/question.json',$json);
+          }
+          return $ok;
+      
+      }
+      function find_question_id( $id):array{
+        $json =file_get_contents(ROUTE_DIR.'data/question.json');
+        $arrayUser = json_decode($json , true);
+        foreach($arrayUser as $user ){
+          if ($user ['id'] == $id){
+            return $user;
+          }
         }
-        return $nombre_page_total;
-    }
+        return[];
+      }
 ?>

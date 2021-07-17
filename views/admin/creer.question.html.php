@@ -1,20 +1,19 @@
 <?php
-
-
 if (isset($_SESSION['arrayError'])) {
-	$arrayError=$_SESSION['arrayError'];
-	unset($_SESSION['arrayError']);
-      }
-     require_once(ROUTE_DIR.'views/inc/header.html.php');
-    ?>
+$arrayError=$_SESSION['arrayError'];
+unset($_SESSION['arrayError']);
+ }
+ require_once(ROUTE_DIR.'views/inc/header.html.php');
+ ?>
+
 <?php
-     require_once(ROUTE_DIR.'views/inc/deconect.html.php');
-    ?>
-     <div class="container">
+ require_once(ROUTE_DIR.'views/inc/deconect.html.php');
+?>
+<div class="container">
 	<div class="row bg-white">
 		<div class="col-md-4">
-			<?php require_once(ROUTE_DIR.'views/inc/menu.html.php');?>
-		</div>	
+		<?php require_once(ROUTE_DIR.'views/inc/menu.html.php');?>
+</div>	
    		 <div class="  col-md-8 ">
 			<div class="card conteneur-liste ">
 				<div class="text-center ">paramatrer votre question </div> 
@@ -31,7 +30,8 @@ if (isset($_SESSION['arrayError'])) {
 						<small class="form-text text-danger">
 							 <?php echo isset($arrayError['question']) ? $arrayError['question'] : ''; ?>   
 						</small>
-					</div>
+		</div>
+		
 
 					<div class="p-4">
 						<label  for="point"  class=" point text-Avertissement">nbre de points</label>
@@ -42,9 +42,9 @@ if (isset($_SESSION['arrayError'])) {
 					<div class="p-4">
 						<label class="ml-4" for="select"> type de reponse</label>
 						<select class="form-select" name="type_de_reponse" class="type_de_reponse" aria-label="Default select example">
-							<option value="choix_simple">choix simple</option>
+							<option value="simple">choix simple</option>
 							<option value="choix_multiple">choix multiple</option>
-							<option value="choix_unique">choix unique</option>
+							<option value="text">texte</option>
 						</select><br>
 					</div>
 
@@ -60,12 +60,12 @@ if (isset($_SESSION['arrayError'])) {
 						<?php for ($i=1; $i <= $_SESSION['nbrreponse']; $i++):?>
 							<label for="">reponse <?= $i ?></label>
 							<input type="text" class="form-control" name="reponse[]" id="" aria-describedby="helpId" placeholder="">
-
 							<?php if($recuper_input=="choix_multiple") :?>
 								<input type="checkbox" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
 								<?php  elseif($recuper_input=="choix_unique") : ?>
 									<input type="radio" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-							<?php endif ?> 
+							<?php endif ?>
+							 
 						<?php endfor ?> 
 					</div>
 					
@@ -88,7 +88,12 @@ if (isset($_SESSION['arrayError'])) {
 		unset($_SESSION['type_de_reponse']);
 
 	}
- 
+	if (isset($_SESSION['question'])) {
+		unset($_SESSION['question']);
+	}
+	if (isset($_SESSION['point'])) {
+		unset($_SESSION['point']);
+	}
 	?>
 	<style>
 	.btn-enregistr{

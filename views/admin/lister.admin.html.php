@@ -36,7 +36,7 @@
     <?php foreach ($arrayuser as $user):?>
   <?php if ($user['role']=='ROLE_ADMIN'):?>
 
-      <th scope="row">1</th>
+      <th scope="row"></th>
       <td><?=$user['prenom']?></td>
       <td><?=$user['nom']?></td> 
       <!-- <td><?=$user['score']?></td> -->
@@ -45,7 +45,6 @@
     <?php endforeach ?>
     
 	    </div>
-	<button type="submit" class="btn  btn-suivant btn-primary">Suivant </button>
 
 		</div>	
 		</div>		

@@ -50,7 +50,7 @@ function connexion(string $login,string $password):void{
             $_SESSION['userconnect']=$user;
             if ($user['role']=='ROLE_ADMIN') {
                
-                header('location:'.WEB_ROUTE.'?controlleurs=admin&views=liste.question');exit;
+                header('location:'.WEB_ROUTE.'?controlleurs=admin&views=tableau.bord');exit;
             }elseif ($user['role']== 'ROLE_JOUEUR') {
              header('location:'.WEB_ROUTE.'?controlleurs=admin&views=jeu');exit;
             }
