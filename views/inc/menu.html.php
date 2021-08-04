@@ -25,7 +25,7 @@
 		<i class="fas fa-edit"></i>
 		</li>
 		<li class="nav-item">
-		<a class="nav-link" href="<?= WEB_ROUTE. '?controlleurs=admin&views=tableau.bord'?>">tableau de bord</a>
+		<a class="nav-link" href="<?= WEB_ROUTE. '?controlleurs=admin&views=tableau.bord'?>">Tableau de bord</a>
 		<i class="fas fa-chalkboard"></i>
 		</li>	
 		</ul>
